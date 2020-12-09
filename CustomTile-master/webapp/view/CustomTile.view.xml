@@ -1,0 +1,17 @@
+<core:View xmlns="sap.suite.ui.commons" xmlns:ui="sap.suite.ui.microchart" xmlns:core="sap.ui.core"
+	xmlns:html="http://www.w3.org/1999/xhtml" controllerName="view.CustomTile">
+	<GenericTile press="onPress" header="{/config/display_title_text}" subheader="{/config/display_subtitle_text}" frameType="TwoByOne"
+		mode="ContentMode">
+		<TileContent footer="{/config/display_info_text}">
+			<content>
+				<ui:ComparisonMicroChart size="L" scale="L">
+					<ui:data>
+						<ui:ComparisonMicroChartData title="Monat 1" value="10" color="Good"/>
+						<ui:ComparisonMicroChartData title="Monat 2" value="20" color="Error"/>
+						<ui:ComparisonMicroChartData title="Monat 3" value="30" color="Critical"/>
+					</ui:data>
+				</ui:ComparisonMicroChart>
+			</content>
+		</TileContent>
+	</GenericTile>
+</core:View>
